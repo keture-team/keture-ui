@@ -13,14 +13,20 @@ function removeJsBundle() {
 
 export default defineConfig({
   build: {
-    cssCodeSplit: false,
     emptyOutDir: true,
     outDir: "dist",
-    lib: {
-      entry: resolve(__dirname, "index.js"),
-      formats: ["es"],
-      fileName: () => "keture.js",
-      cssFileName: "keture"
+    rollupOptions: {
+      input: resolve(__dirname, "index.css"),
+      output: {
+        assetFileNames: assetInfo => {
+          if (assetInfo.names.includes("index.css")) {
+            return "keture.css";
+          }
+
+          return "assets/[name]-[hash][extname]";
+        },
+        entryFileNames: "keture.js"
+      }
     }
   },
   plugins: [removeJsBundle()]
