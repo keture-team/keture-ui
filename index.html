@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keture UI Test</title>
+    <link rel="stylesheet" href="./packages/core/dist/keture.css" />
+    <style>
+      main {
+        width: min(720px, calc(100% - 2rem));
+        margin: 0 auto;
+        padding: var(--kt-space-6) 0;
+      }
+
+      .demo-stack {
+        display: grid;
+        gap: var(--kt-space-5);
+      }
+
+      .demo-group {
+        display: grid;
+        gap: var(--kt-space-3);
+      }
+
+      .demo-label {
+        font-size: 0.875rem;
+        color: var(--kt-color-text-muted);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="demo-stack">
+      <section class="demo-group">
+        <span class="demo-label">Button</span>
+        <div>
+          <button class="kt-button" type="button">Primary Action</button>
+        </div>
+      </section>
+
+      <section class="demo-group">
+        <span class="demo-label">Card</span>
+        <article class="kt-card">
+          <h2>Minimal card</h2>
+          <p>
+            A simple content container using the default spacing, surface, border,
+            and shadow tokens.
+          </p>
+          <div>
+            <button class="kt-button" type="button">Read more</button>
+          </div>
+        </article>
+      </section>
+
+      <section class="demo-group">
+        <span class="demo-label">Input</span>
+        <label class="demo-group" for="demo-input">
+          <span>Name</span>
+          <input
+            id="demo-input"
+            class="kt-input"
+            type="text"
+            placeholder="Type here"
+          />
+        </label>
+      </section>
+    </main>
+  </body>
+</html>

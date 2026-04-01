@@ -1,0 +1,33 @@
+:root {
+  --kt-color-primary: #2563eb;
+  --kt-color-primary-hover: #1d4ed8;
+  --kt-color-on-primary: #ffffff;
+  --kt-color-background: #f8fafc;
+  --kt-color-surface: #ffffff;
+  --kt-color-surface-muted: #f1f5f9;
+  --kt-color-text: #0f172a;
+  --kt-color-text-muted: #475569;
+  --kt-color-border: #dbe2ea;
+  --kt-color-border-strong: #b8c4d3;
+  --kt-color-focus-ring: rgba(37, 99, 235, 0.18);
+
+  --kt-space-1: 0.25rem;
+  --kt-space-2: 0.5rem;
+  --kt-space-3: 0.75rem;
+  --kt-space-4: 1rem;
+  --kt-space-5: 1.5rem;
+  --kt-space-6: 2rem;
+
+  --kt-radius-sm: 0.375rem;
+  --kt-radius-md: 0.5rem;
+  --kt-radius-lg: 0.75rem;
+
+  --kt-font-family-base: "Inter", "Segoe UI", sans-serif;
+  --kt-font-size-base: 1rem;
+  --kt-line-height-base: 1.5;
+  --kt-font-weight-medium: 500;
+
+  --kt-control-height-md: 2.5rem;
+  --kt-focus-ring-width: 3px;
+  --kt-shadow-sm: 0 8px 24px rgba(15, 23, 42, 0.06);
+}

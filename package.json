@@ -1,0 +1,8 @@
+{
+  "name": "keture-ui",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ]
+}

@@ -1,0 +1,45 @@
+.kt-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--kt-space-2);
+  min-height: var(--kt-control-height-md);
+  padding: 0 var(--kt-space-4);
+  border: 1px solid var(--kt-color-primary);
+  border-radius: var(--kt-radius-md);
+  background-color: var(--kt-color-primary);
+  color: var(--kt-color-on-primary);
+  font-weight: var(--kt-font-weight-medium);
+  line-height: 1;
+  cursor: pointer;
+  transition:
+    background-color 160ms ease,
+    border-color 160ms ease,
+    color 160ms ease,
+    box-shadow 160ms ease,
+    transform 160ms ease;
+}
+
+.kt-button:hover {
+  background-color: var(--kt-color-primary-hover);
+  border-color: var(--kt-color-primary-hover);
+}
+
+.kt-button:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 var(--kt-focus-ring-width) var(--kt-color-focus-ring);
+}
+
+.kt-button:active {
+  transform: translateY(1px);
+}
+
+.kt-button:disabled,
+.kt-button[aria-disabled="true"] {
+  cursor: not-allowed;
+  background-color: var(--kt-color-surface-muted);
+  border-color: var(--kt-color-border);
+  color: var(--kt-color-text-muted);
+  box-shadow: none;
+  transform: none;
+}
