@@ -1,0 +1,39 @@
+.kt-theme-space {
+  --kt-color-primary: #7c5cff;
+  --kt-color-primary-hover: #9478ff;
+  --kt-color-on-primary: #050816;
+  --kt-color-bg: #060816;
+  --kt-color-background: var(--kt-color-bg);
+  --kt-color-surface: #0f1730;
+  --kt-color-surface-muted: #172143;
+  --kt-color-text: #ecf3ff;
+  --kt-color-text-muted: #95a6d6;
+  --kt-color-border: #26345f;
+  --kt-color-border-strong: #3c4e87;
+  --kt-color-accent: #2df6d0;
+  --kt-color-glow: rgba(45, 246, 208, 0.28);
+  --kt-color-focus-ring: rgba(124, 92, 255, 0.32);
+
+  --kt-space-1: 0.25rem;
+  --kt-space-2: 0.5rem;
+  --kt-space-3: 0.75rem;
+  --kt-space-4: 1rem;
+  --kt-space-5: 1.5rem;
+  --kt-space-6: 2rem;
+  --kt-space-7: 3rem;
+
+  --kt-radius-sm: 0.375rem;
+  --kt-radius-md: 0.75rem;
+  --kt-radius-lg: 1rem;
+  --kt-radius-xl: 1.5rem;
+
+  --kt-font-family-base: "Inter", "Segoe UI", sans-serif;
+  --kt-font-size-base: 1rem;
+  --kt-line-height-base: 1.5;
+  --kt-font-weight-medium: 500;
+
+  --kt-control-height-md: 2.75rem;
+  --kt-focus-ring-width: 3px;
+  --kt-shadow-sm: 0 10px 30px rgba(2, 6, 23, 0.45);
+  --kt-shadow-md: 0 18px 48px rgba(45, 246, 208, 0.1);
+}

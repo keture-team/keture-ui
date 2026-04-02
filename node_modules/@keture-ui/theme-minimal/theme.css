@@ -2,7 +2,8 @@
   --kt-color-primary: #2563eb;
   --kt-color-primary-hover: #1d4ed8;
   --kt-color-on-primary: #ffffff;
-  --kt-color-background: #f8fafc;
+  --kt-color-bg: #f8fafc;
+  --kt-color-background: var(--kt-color-bg);
   --kt-color-surface: #ffffff;
   --kt-color-surface-muted: #f1f5f9;
   --kt-color-text: #0f172a;

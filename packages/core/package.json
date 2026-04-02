@@ -1,5 +1,5 @@
 {
-  "name": "keture-ui",
+  "name": "@keture/ui",
   "version": "0.0.1",
   "main": "dist/keture.css",
   "style": "dist/keture.css",
