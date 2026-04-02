@@ -4,6 +4,7 @@ body {
 
 body {
   margin: 0;
+  font-family: var(--font-manrope), "Inter", "Segoe UI", sans-serif;
 }
 
 code,
@@ -31,7 +32,57 @@ pre {
 }
 
 .site-brand {
-  font-weight: var(--kt-font-weight-medium);
+  font-family: var(--font-manrope), "Inter", "Segoe UI", sans-serif;
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  background:
+    radial-gradient(circle at 24% 20%, rgba(255, 255, 255, 0.22) 0 8%, transparent 24%),
+    radial-gradient(circle at 78% 74%, rgba(255, 255, 255, 0.24) 0 7%, transparent 22%),
+    radial-gradient(circle at 58% 22%, rgba(0, 0, 0, 0.18) 0 10%, transparent 28%),
+    radial-gradient(circle at 18% 88%, rgba(0, 0, 0, 0.26) 0 9%, transparent 24%),
+    radial-gradient(circle at 16% 18%, rgba(255, 176, 0, 0.7) 0 11%, transparent 32%),
+    radial-gradient(circle at 84% 14%, rgba(255, 144, 0, 0.56) 0 12%, transparent 34%),
+    radial-gradient(circle at 30% 70%, rgba(255, 106, 19, 0.52) 0 14%, transparent 36%),
+    radial-gradient(circle at 72% 52%, rgba(255, 64, 27, 0.48) 0 15%, transparent 38%),
+    radial-gradient(circle at 88% 82%, rgba(255, 30, 38, 0.44) 0 13%, transparent 34%),
+    radial-gradient(circle at 12% 84%, rgba(255, 0, 48, 0.5) 0 12%, transparent 34%),
+    linear-gradient(
+      135deg,
+      #ffb000 0%,
+      #ff9000 16%,
+      #ff6a13 34%,
+      #ff401b 56%,
+      #ff1e26 78%,
+      #ff0030 100%
+    );
+  background-size:
+    135% 135%,
+    140% 140%,
+    145% 145%,
+    138% 138%,
+    170% 170%,
+    150% 150%,
+    180% 180%,
+    160% 160%,
+    150% 150%,
+    170% 170%,
+    100% 100%;
+  background-position:
+    12% 10%,
+    88% 76%,
+    58% 20%,
+    14% 90%,
+    0% 0%,
+    100% 0%,
+    28% 100%,
+    100% 58%,
+    92% 100%,
+    0% 86%,
+    50% 50%;
+  animation: keture-aurora 8s ease-in-out infinite;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .site-nav {
@@ -40,16 +91,34 @@ pre {
   gap: var(--kt-space-2);
 }
 
-.site-nav a {
+.site-nav-link {
   display: inline-flex;
   align-items: center;
   min-height: var(--kt-control-height-sm);
   padding: 0 var(--kt-space-3);
   border-radius: var(--kt-radius-md);
+  color: var(--kt-color-text);
+  transition:
+    background-color 160ms ease,
+    color 160ms ease;
 }
 
-.site-nav a:hover {
+.site-nav-link:hover {
   background-color: var(--kt-color-surface-muted);
+}
+
+.site-nav-link--active {
+  background-color: color-mix(in srgb, var(--kt-color-primary) 10%, transparent);
+  color: var(--kt-color-primary);
+}
+
+.site-nav-link-label {
+  position: relative;
+  z-index: 1;
+}
+
+.site-nav-link-active-blur {
+  display: none;
 }
 
 .landing-shell,
@@ -81,8 +150,30 @@ pre {
 
 .landing-title {
   margin: 0;
+  font-family: var(--font-manrope), "Inter", "Segoe UI", sans-serif;
   font-size: clamp(2.5rem, 8vw, 4.5rem);
+  font-weight: 900;
   line-height: 0.98;
+  letter-spacing: -0.06em;
+}
+
+.landing-title-gradient {
+  display: inline-block;
+  background:
+    linear-gradient(
+      135deg,
+      #ffb000 0%,
+      #ff9000 16%,
+      #ff6a13 34%,
+      #ff401b 56%,
+      #ff1e26 78%,
+      #ff0030 100%
+    );
+  background-size: 200% 200%;
+  animation: keture-gradient-shift 8s ease-in-out infinite;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .landing-subtitle {
@@ -158,6 +249,7 @@ pre {
 
 .docs-sidebar-title {
   margin: 0;
+  font-family: var(--font-manrope), "Inter", "Segoe UI", sans-serif;
 }
 
 .docs-content {
@@ -279,8 +371,9 @@ pre {
 
 .docs-kicker {
   margin: 0;
-  color: var(--kt-color-text-muted);
+  color: #ff6a13;
   font-size: var(--kt-font-size-sm);
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
 }
@@ -289,11 +382,17 @@ pre {
 .docs-section h2,
 .docs-preview h3 {
   margin: 0;
+  font-family: var(--font-manrope), "Inter", "Segoe UI", sans-serif;
+}
+
+.docs-title {
+  letter-spacing: -0.04em;
 }
 
 .docs-title-sm {
   margin: 0;
   font-size: var(--kt-font-size-lg);
+  font-family: var(--font-manrope), "Inter", "Segoe UI", sans-serif;
 }
 
 .docs-copy {
@@ -336,6 +435,7 @@ pre {
 
 .docs-link-card-title {
   margin: 0;
+  font-family: var(--font-manrope), "Inter", "Segoe UI", sans-serif;
 }
 
 .docs-link-card-copy {
@@ -469,6 +569,67 @@ pre {
   color: inherit;
 }
 
+@keyframes keture-aurora {
+  0% {
+    background-position:
+      12% 10%,
+      88% 76%,
+      58% 20%,
+      14% 90%,
+      0% 0%,
+      100% 0%,
+      28% 100%,
+      100% 58%,
+      92% 100%,
+      0% 86%,
+      50% 50%;
+  }
+
+  50% {
+    background-position:
+      18% 14%,
+      80% 68%,
+      52% 26%,
+      20% 84%,
+      12% 0%,
+      88% 14%,
+      34% 94%,
+      94% 54%,
+      82% 94%,
+      8% 78%,
+      46% 48%;
+  }
+
+  100% {
+    background-position:
+      10% 18%,
+      90% 70%,
+      60% 18%,
+      16% 88%,
+      0% 8%,
+      100% 6%,
+      24% 100%,
+      100% 48%,
+      88% 96%,
+      0% 82%,
+      54% 52%;
+  }
+}
+
+@keyframes keture-gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 @media (max-width: 900px) {
   .landing-grid,
   .landing-grid-compact,
@@ -478,5 +639,11 @@ pre {
 
   .docs-sidebar {
     position: static;
+  }
+
+  .site-nav-shell {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: var(--kt-space-3) 0;
   }
 }

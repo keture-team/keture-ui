@@ -8,11 +8,13 @@ export default function HomePage() {
       <section className="landing-section landing-hero">
         <div className="landing-copy">
           <p className="docs-kicker">Design Systems</p>
-          <h1 className="landing-title">Keture UI</h1>
+          <h1 className="landing-title">
+            <span className="landing-title-gradient">Keture UI</span>
+          </h1>
           <p className="landing-subtitle">
             One system. Multiple design identities.
           </p>
-          <div className="landing-actions">
+          <div className="landing-actions kt-theme-keture">
             <Link className="kt-button kt-btn-md kt-btn-primary" href="/get-started">
               Get Started
             </Link>
@@ -128,7 +130,7 @@ export default function HomePage() {
             <h2>Choose a system, then browse the components</h2>
           </div>
 
-          <div className="landing-actions">
+          <div className="landing-actions kt-theme-keture">
             <Link className="kt-button kt-btn-md kt-btn-primary" href="/themes">
               Explore Themes
             </Link>

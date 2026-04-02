@@ -8,6 +8,14 @@ import "./globals.css";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import Link from "next/link";
+import { Manrope } from "next/font/google";
+
+import PrimaryNav from "./_components/primary-nav";
+
+const manrope = Manrope({
+  variable: "--font-manrope",
+  subsets: ["latin"]
+});
 
 export const metadata: Metadata = {
   title: "Keture UI",
@@ -21,19 +29,14 @@ type RootLayoutProps = {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
-      <body>
+      <body className={manrope.variable}>
         <header className="site-header">
           <div className="site-nav-shell">
             <Link className="site-brand" href="/">
               Keture UI
             </Link>
 
-            <nav aria-label="Primary" className="site-nav">
-              <Link href="/">Home</Link>
-              <Link href="/get-started">Get Started</Link>
-              <Link href="/themes">Themes</Link>
-              <Link href="/docs">Docs</Link>
-            </nav>
+            <PrimaryNav />
           </div>
         </header>
 
