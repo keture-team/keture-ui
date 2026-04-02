@@ -16,6 +16,7 @@
   --kt-color-border-strong: #3c4e87;
   --kt-color-accent: #2df6d0;
   --kt-color-glow: rgba(45, 246, 208, 0.28);
+  --kt-color-overlay: rgba(2, 6, 23, 0.68);
   --kt-color-focus-ring: rgba(124, 92, 255, 0.32);
 
   --kt-space-0: 0;
@@ -45,6 +46,8 @@
   --kt-control-height-md: 2.75rem;
   --kt-control-height-lg: 3.25rem;
   --kt-focus-ring-width: 3px;
+  --kt-drawer-width: 22rem;
+  --kt-z-index-drawer: 1000;
   --kt-shadow-sm: 0 10px 30px rgba(2, 6, 23, 0.45);
   --kt-shadow-md: 0 18px 48px rgba(45, 246, 208, 0.1);
   --kt-shadow-lg: 0 28px 72px rgba(124, 92, 255, 0.18);
