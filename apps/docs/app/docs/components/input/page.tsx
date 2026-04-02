@@ -1,4 +1,6 @@
 import Link from "next/link";
+import CodeBlock from "../../_components/code-block";
+import ThemePreviewScope from "../../_components/theme-preview-scope";
 
 const inputCode = `<input class="kt-input" type="text" placeholder="Enter your email" />`;
 
@@ -26,21 +28,21 @@ export default function InputPage() {
         </header>
       </div>
 
-      <section className="docs-section">
-        <div className="docs-preview">
-          <div className="docs-row">
-            <input
-              className="kt-input"
-              type="text"
-              placeholder="Enter your email"
-            />
+      <ThemePreviewScope>
+        <section className="docs-section">
+          <div className="docs-preview">
+            <div className="docs-row">
+              <input
+                className="kt-input"
+                type="text"
+                placeholder="Enter your email"
+              />
+            </div>
           </div>
-        </div>
 
-        <pre className="docs-code">
-          <code>{inputCode}</code>
-        </pre>
-      </section>
+          <CodeBlock code={inputCode} />
+        </section>
+      </ThemePreviewScope>
     </div>
   );
 }

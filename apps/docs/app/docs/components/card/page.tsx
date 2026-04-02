@@ -1,4 +1,6 @@
 import Link from "next/link";
+import CodeBlock from "../../_components/code-block";
+import ThemePreviewScope from "../../_components/theme-preview-scope";
 
 const cardCode = `<article class="kt-card">
   <h3>Simple card</h3>
@@ -28,18 +30,18 @@ export default function CardPage() {
         </header>
       </div>
 
-      <section className="docs-section">
-        <div className="docs-preview">
-          <article className="kt-card">
-            <h3>Simple card</h3>
-            <p>Cards group content with a clean surface and soft border.</p>
-          </article>
-        </div>
+      <ThemePreviewScope>
+        <section className="docs-section">
+          <div className="docs-preview">
+            <article className="kt-card">
+              <h3>Simple card</h3>
+              <p>Cards group content with a clean surface and soft border.</p>
+            </article>
+          </div>
 
-        <pre className="docs-code">
-          <code>{cardCode}</code>
-        </pre>
-      </section>
+          <CodeBlock code={cardCode} />
+        </section>
+      </ThemePreviewScope>
     </div>
   );
 }

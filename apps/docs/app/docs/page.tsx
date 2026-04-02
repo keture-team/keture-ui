@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ThemeSwitcherPreview from "./_components/theme-switcher-preview";
 
 const componentLinks = [
   {
@@ -52,6 +53,8 @@ export default function DocsPage() {
           ))}
         </div>
       </section>
+
+      <ThemeSwitcherPreview />
     </div>
   );
 }

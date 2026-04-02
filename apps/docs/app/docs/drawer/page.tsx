@@ -2,6 +2,8 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import CodeBlock from "../_components/code-block";
+import ThemePreviewScope from "../_components/theme-preview-scope";
 
 const drawerCode = `<button class="kt-button kt-btn-md kt-btn-primary" type="button">
   Open Drawer
@@ -36,27 +38,27 @@ export default function DrawerPage() {
   }, []);
 
   return (
-    <>
-      <div className="docs-main">
-        <div className="docs-stack">
-          <nav aria-label="Breadcrumb" className="docs-breadcrumbs">
-            <Link href="/">Home</Link>
-            <span>/</span>
-            <Link href="/docs">Docs</Link>
-            <span>/</span>
-            <span>Drawer</span>
-          </nav>
+    <div className="docs-main">
+      <div className="docs-stack">
+        <nav aria-label="Breadcrumb" className="docs-breadcrumbs">
+          <Link href="/">Home</Link>
+          <span>/</span>
+          <Link href="/docs">Docs</Link>
+          <span>/</span>
+          <span>Drawer</span>
+        </nav>
 
-          <header className="docs-section-header">
-            <p className="docs-kicker">Component</p>
-            <h1 className="docs-title">Drawer</h1>
-            <p className="docs-copy">
-              The drawer slides in from the side and pairs with an overlay for focus
-              and dismissal.
-            </p>
-          </header>
-        </div>
+        <header className="docs-section-header">
+          <p className="docs-kicker">Component</p>
+          <h1 className="docs-title">Drawer</h1>
+          <p className="docs-copy">
+            The drawer slides in from the side and pairs with an overlay for focus
+            and dismissal.
+          </p>
+        </header>
+      </div>
 
+      <ThemePreviewScope>
         <section className="docs-section">
           <div className="docs-section-header">
             <h2>Preview</h2>
@@ -78,50 +80,48 @@ export default function DrawerPage() {
             </div>
           </div>
 
-          <pre className="docs-code">
-            <code>{drawerCode}</code>
-          </pre>
+          <CodeBlock code={drawerCode} />
         </section>
-      </div>
 
-      <div className={`kt-drawer${isOpen ? " kt-drawer-open" : ""}`}>
-        <div className="docs-stack">
-          <div className="docs-row docs-row-space-between">
-            <div className="docs-stack">
-              <p className="docs-kicker">Drawer Demo</p>
-              <h2 className="docs-title-sm">Navigation</h2>
+        <div className={`kt-drawer${isOpen ? " kt-drawer-open" : ""}`}>
+          <div className="docs-stack">
+            <div className="docs-row docs-row-space-between">
+              <div className="docs-stack">
+                <p className="docs-kicker">Drawer Demo</p>
+                <h2 className="docs-title-sm">Navigation</h2>
+              </div>
+              <button
+                className="kt-button kt-btn-sm kt-btn-ghost"
+                onClick={() => setIsOpen(false)}
+                type="button"
+              >
+                Close
+              </button>
             </div>
-            <button
-              className="kt-button kt-btn-sm kt-btn-ghost"
-              onClick={() => setIsOpen(false)}
-              type="button"
-            >
-              Close
-            </button>
+
+            <nav className="docs-nav">
+              <Link href="/docs/components/button" onClick={() => setIsOpen(false)}>
+                Button
+              </Link>
+              <Link href="/docs/components/card" onClick={() => setIsOpen(false)}>
+                Card
+              </Link>
+              <Link href="/docs/components/input" onClick={() => setIsOpen(false)}>
+                Input
+              </Link>
+              <Link href="/docs/badge" onClick={() => setIsOpen(false)}>
+                Badge
+              </Link>
+            </nav>
           </div>
-
-          <nav className="docs-nav">
-            <Link href="/docs/components/button" onClick={() => setIsOpen(false)}>
-              Button
-            </Link>
-            <Link href="/docs/components/card" onClick={() => setIsOpen(false)}>
-              Card
-            </Link>
-            <Link href="/docs/components/input" onClick={() => setIsOpen(false)}>
-              Input
-            </Link>
-            <Link href="/docs/badge" onClick={() => setIsOpen(false)}>
-              Badge
-            </Link>
-          </nav>
         </div>
-      </div>
 
-      <div
-        aria-hidden="true"
-        className={`kt-drawer-overlay${isOpen ? " kt-drawer-open" : ""}`}
-        onClick={() => setIsOpen(false)}
-      />
-    </>
+        <div
+          aria-hidden="true"
+          className={`kt-drawer-overlay${isOpen ? " kt-drawer-open" : ""}`}
+          onClick={() => setIsOpen(false)}
+        />
+      </ThemePreviewScope>
+    </div>
   );
 }
