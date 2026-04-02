@@ -29,20 +29,16 @@ export default function InputPage() {
       </div>
 
       <ThemePreviewScope>
-        <section className="docs-section">
-          <div className="docs-preview">
-            <div className="docs-row">
-              <input
-                className="kt-input"
-                type="text"
-                placeholder="Enter your email"
-              />
-            </div>
-          </div>
-
-          <CodeBlock code={inputCode} />
-        </section>
+        <div className="docs-row">
+          <input
+            className="kt-input"
+            type="text"
+            placeholder="Enter your email"
+          />
+        </div>
       </ThemePreviewScope>
+
+      <CodeBlock code={inputCode} />
     </div>
   );
 }

@@ -30,27 +30,15 @@ export default function BadgePage() {
       </div>
 
       <ThemePreviewScope>
-        <section className="docs-section">
-          <div className="docs-section-header">
-            <h2>Variants</h2>
-            <p className="docs-copy">
-              Badge variants use theme-driven semantic colors without hardcoded
-              component values.
-            </p>
-          </div>
-
-          <div className="docs-preview">
-            <div className="docs-row">
-              <span className="kt-badge kt-badge-primary">Primary</span>
-              <span className="kt-badge kt-badge-secondary">Secondary</span>
-              <span className="kt-badge kt-badge-success">Success</span>
-              <span className="kt-badge kt-badge-danger">Danger</span>
-            </div>
-          </div>
-
-          <CodeBlock code={badgeCode} />
-        </section>
+        <div className="docs-row">
+          <span className="kt-badge kt-badge-primary">Primary</span>
+          <span className="kt-badge kt-badge-secondary">Secondary</span>
+          <span className="kt-badge kt-badge-success">Success</span>
+          <span className="kt-badge kt-badge-danger">Danger</span>
+        </div>
       </ThemePreviewScope>
+
+      <CodeBlock code={badgeCode} />
     </div>
   );
 }

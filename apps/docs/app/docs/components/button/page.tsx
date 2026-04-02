@@ -35,60 +35,58 @@ export default function ButtonPage() {
         </header>
       </div>
 
-      <ThemePreviewScope>
-        <section className="docs-section">
-          <div className="docs-section-header">
-            <h2>Variants</h2>
-            <p className="docs-copy">
-              Combine <code>kt-button</code> with a variant class to switch tone.
-            </p>
+      <section className="docs-section">
+        <div className="docs-section-header">
+          <h2>Variants</h2>
+          <p className="docs-copy">
+            Combine <code>kt-button</code> with a variant class to switch tone.
+          </p>
+        </div>
+
+        <ThemePreviewScope>
+          <div className="docs-row">
+            <button className="kt-button kt-btn-md kt-btn-primary" type="button">
+              Primary
+            </button>
+            <button className="kt-button kt-btn-md kt-btn-secondary" type="button">
+              Secondary
+            </button>
+            <button className="kt-button kt-btn-md kt-btn-outline" type="button">
+              Outline
+            </button>
+            <button className="kt-button kt-btn-md kt-btn-ghost" type="button">
+              Ghost
+            </button>
           </div>
+        </ThemePreviewScope>
 
-          <div className="docs-preview">
-            <div className="docs-row">
-              <button className="kt-button kt-btn-md kt-btn-primary" type="button">
-                Primary
-              </button>
-              <button className="kt-button kt-btn-md kt-btn-secondary" type="button">
-                Secondary
-              </button>
-              <button className="kt-button kt-btn-md kt-btn-outline" type="button">
-                Outline
-              </button>
-              <button className="kt-button kt-btn-md kt-btn-ghost" type="button">
-                Ghost
-              </button>
-            </div>
+        <CodeBlock code={variantCode} />
+      </section>
+
+      <section className="docs-section">
+        <div className="docs-section-header">
+          <h2>Sizes</h2>
+          <p className="docs-copy">
+            Size modifiers can be layered onto any button variant.
+          </p>
+        </div>
+
+        <ThemePreviewScope>
+          <div className="docs-row">
+            <button className="kt-button kt-btn-sm kt-btn-primary" type="button">
+              Small
+            </button>
+            <button className="kt-button kt-btn-md kt-btn-primary" type="button">
+              Medium
+            </button>
+            <button className="kt-button kt-btn-lg kt-btn-primary" type="button">
+              Large
+            </button>
           </div>
+        </ThemePreviewScope>
 
-          <CodeBlock code={variantCode} />
-        </section>
-
-        <section className="docs-section">
-          <div className="docs-section-header">
-            <h2>Sizes</h2>
-            <p className="docs-copy">
-              Size modifiers can be layered onto any button variant.
-            </p>
-          </div>
-
-          <div className="docs-preview">
-            <div className="docs-row">
-              <button className="kt-button kt-btn-sm kt-btn-primary" type="button">
-                Small
-              </button>
-              <button className="kt-button kt-btn-md kt-btn-primary" type="button">
-                Medium
-              </button>
-              <button className="kt-button kt-btn-lg kt-btn-primary" type="button">
-                Large
-              </button>
-            </div>
-          </div>
-
-          <CodeBlock code={sizeCode} />
-        </section>
-      </ThemePreviewScope>
+        <CodeBlock code={sizeCode} />
+      </section>
     </div>
   );
 }

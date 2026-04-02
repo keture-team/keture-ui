@@ -31,17 +31,13 @@ export default function CardPage() {
       </div>
 
       <ThemePreviewScope>
-        <section className="docs-section">
-          <div className="docs-preview">
-            <article className="kt-card">
-              <h3>Simple card</h3>
-              <p>Cards group content with a clean surface and soft border.</p>
-            </article>
-          </div>
-
-          <CodeBlock code={cardCode} />
-        </section>
+        <article className="kt-card">
+          <h3>Simple card</h3>
+          <p>Cards group content with a clean surface and soft border.</p>
+        </article>
       </ThemePreviewScope>
+
+      <CodeBlock code={cardCode} />
     </div>
   );
 }

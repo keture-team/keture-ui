@@ -1,22 +1,4 @@
-import Link from "next/link";
-
-const componentLinks = [
-  {
-    href: "/docs/components/button",
-    title: "Button",
-    description: "Variants, sizes, and basic usage for the kt-button API."
-  },
-  {
-    href: "/docs/components/card",
-    title: "Card",
-    description: "Simple content containers with surface, border, and spacing."
-  },
-  {
-    href: "/docs/components/input",
-    title: "Input",
-    description: "Text field styles with shared focus and spacing tokens."
-  }
-];
+import ComponentPreviewCard from "./_components/component-preview-card";
 
 export default function ComponentsPage() {
   return (
@@ -25,21 +7,46 @@ export default function ComponentsPage() {
         <p className="docs-kicker">Components</p>
         <h1 className="docs-title">Component reference</h1>
         <p className="docs-copy">
-          Browse individual component pages. This section is structured to grow as
-          new components are added.
+          Preview each component here, or open the dedicated page for code samples
+          and usage details.
         </p>
       </header>
 
       <section className="docs-section">
-        <div className="docs-grid">
-          {componentLinks.map(component => (
-            <Link className="docs-link-card" href={component.href} key={component.href}>
-              <div className="docs-link-card-content">
-                <h2 className="docs-link-card-title">{component.title}</h2>
-                <p className="docs-link-card-copy">{component.description}</p>
-              </div>
-            </Link>
-          ))}
+        <div className="docs-grid docs-component-grid">
+          <ComponentPreviewCard
+            description="Variants, sizes, and basic usage for the kt-button API."
+            href="/docs/components/button"
+            title="Button"
+          >
+            <div className="docs-row">
+              <button className="kt-button kt-btn-md kt-btn-primary" type="button">
+                Primary
+              </button>
+              <button className="kt-button kt-btn-md kt-btn-secondary" type="button">
+                Secondary
+              </button>
+            </div>
+          </ComponentPreviewCard>
+
+          <ComponentPreviewCard
+            description="Simple content containers with surface, border, and spacing."
+            href="/docs/components/card"
+            title="Card"
+          >
+            <article className="kt-card">
+              <h3>Simple card</h3>
+              <p>Cards inherit surface and border tokens from the active theme.</p>
+            </article>
+          </ComponentPreviewCard>
+
+          <ComponentPreviewCard
+            description="Text field styles with shared focus and spacing tokens."
+            href="/docs/components/input"
+            title="Input"
+          >
+            <input className="kt-input" placeholder="Enter your email" type="text" />
+          </ComponentPreviewCard>
         </div>
       </section>
     </div>

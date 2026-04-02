@@ -59,29 +59,15 @@ export default function DrawerPage() {
       </div>
 
       <ThemePreviewScope>
-        <section className="docs-section">
-          <div className="docs-section-header">
-            <h2>Preview</h2>
-            <p className="docs-copy">
-              Use the toggle button to open the drawer. Click the overlay or press
-              Escape to close it.
-            </p>
-          </div>
-
-          <div className="docs-preview">
-            <div className="docs-row">
-              <button
-                className="kt-button kt-btn-md kt-btn-primary"
-                onClick={() => setIsOpen(true)}
-                type="button"
-              >
-                Open Drawer
-              </button>
-            </div>
-          </div>
-
-          <CodeBlock code={drawerCode} />
-        </section>
+        <div className="docs-row">
+          <button
+            className="kt-button kt-btn-md kt-btn-primary"
+            onClick={() => setIsOpen(true)}
+            type="button"
+          >
+            Open Drawer
+          </button>
+        </div>
 
         <div className={`kt-drawer${isOpen ? " kt-drawer-open" : ""}`}>
           <div className="docs-stack">
@@ -122,6 +108,8 @@ export default function DrawerPage() {
           onClick={() => setIsOpen(false)}
         />
       </ThemePreviewScope>
+
+      <CodeBlock code={drawerCode} />
     </div>
   );
 }
