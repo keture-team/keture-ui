@@ -1,6 +1,10 @@
 .kt-theme-space {
   --kt-color-primary: #7c5cff;
   --kt-color-primary-hover: #9478ff;
+  --kt-color-secondary: #4f79ff;
+  --kt-color-muted: #7185bc;
+  --kt-color-success: #33d17a;
+  --kt-color-danger: #ff5d7a;
   --kt-color-on-primary: #050816;
   --kt-color-bg: #060816;
   --kt-color-background: var(--kt-color-bg);
@@ -14,6 +18,7 @@
   --kt-color-glow: rgba(45, 246, 208, 0.28);
   --kt-color-focus-ring: rgba(124, 92, 255, 0.32);
 
+  --kt-space-0: 0;
   --kt-space-1: 0.25rem;
   --kt-space-2: 0.5rem;
   --kt-space-3: 0.75rem;
@@ -21,6 +26,7 @@
   --kt-space-5: 1.5rem;
   --kt-space-6: 2rem;
   --kt-space-7: 3rem;
+  --kt-space-8: 4rem;
 
   --kt-radius-sm: 0.375rem;
   --kt-radius-md: 0.75rem;
@@ -28,12 +34,58 @@
   --kt-radius-xl: 1.5rem;
 
   --kt-font-family-base: "Inter", "Segoe UI", sans-serif;
-  --kt-font-size-base: 1rem;
+  --kt-font-size-sm: 0.875rem;
+  --kt-font-size-md: 1rem;
+  --kt-font-size-base: var(--kt-font-size-md);
+  --kt-font-size-lg: 1.125rem;
   --kt-line-height-base: 1.5;
   --kt-font-weight-medium: 500;
 
+  --kt-control-height-sm: 2.25rem;
   --kt-control-height-md: 2.75rem;
+  --kt-control-height-lg: 3.25rem;
   --kt-focus-ring-width: 3px;
   --kt-shadow-sm: 0 10px 30px rgba(2, 6, 23, 0.45);
   --kt-shadow-md: 0 18px 48px rgba(45, 246, 208, 0.1);
+  --kt-shadow-lg: 0 28px 72px rgba(124, 92, 255, 0.18);
+
+  --kt-button-primary-bg: var(--kt-color-primary);
+  --kt-button-primary-border: var(--kt-color-primary);
+  --kt-button-primary-color: var(--kt-color-on-primary);
+  --kt-button-primary-bg-hover: var(--kt-color-primary-hover);
+  --kt-button-primary-border-hover: var(--kt-color-primary-hover);
+  --kt-button-primary-color-hover: var(--kt-color-on-primary);
+  --kt-button-primary-bg-active: var(--kt-color-primary-hover);
+  --kt-button-primary-border-active: var(--kt-color-primary-hover);
+  --kt-button-primary-color-active: var(--kt-color-on-primary);
+
+  --kt-button-secondary-bg: var(--kt-color-surface-muted);
+  --kt-button-secondary-border: var(--kt-color-border);
+  --kt-button-secondary-color: var(--kt-color-text);
+  --kt-button-secondary-bg-hover: var(--kt-color-surface);
+  --kt-button-secondary-border-hover: var(--kt-color-border-strong);
+  --kt-button-secondary-color-hover: var(--kt-color-text);
+  --kt-button-secondary-bg-active: var(--kt-color-surface-muted);
+  --kt-button-secondary-border-active: var(--kt-color-border-strong);
+  --kt-button-secondary-color-active: var(--kt-color-text);
+
+  --kt-button-outline-bg: transparent;
+  --kt-button-outline-border: var(--kt-color-accent);
+  --kt-button-outline-color: var(--kt-color-text);
+  --kt-button-outline-bg-hover: var(--kt-color-glow);
+  --kt-button-outline-border-hover: var(--kt-color-accent);
+  --kt-button-outline-color-hover: var(--kt-color-text);
+  --kt-button-outline-bg-active: var(--kt-color-glow);
+  --kt-button-outline-border-active: var(--kt-color-primary);
+  --kt-button-outline-color-active: var(--kt-color-text);
+
+  --kt-button-ghost-bg: transparent;
+  --kt-button-ghost-border: transparent;
+  --kt-button-ghost-color: var(--kt-color-accent);
+  --kt-button-ghost-bg-hover: var(--kt-color-glow);
+  --kt-button-ghost-border-hover: transparent;
+  --kt-button-ghost-color-hover: var(--kt-color-text);
+  --kt-button-ghost-bg-active: var(--kt-color-glow);
+  --kt-button-ghost-border-active: transparent;
+  --kt-button-ghost-color-active: var(--kt-color-text);
 }
