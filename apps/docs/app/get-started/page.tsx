@@ -12,6 +12,10 @@ const themeCode = `<div class="kt-theme-space">
   <button class="kt-button kt-btn-md kt-btn-primary">Space theme button</button>
 </div>`;
 
+const alternateThemeCode = `<div class="kt-theme-slate">
+  <button class="kt-button kt-btn-md kt-btn-primary">Slate theme button</button>
+</div>`;
+
 export default function GetStartedPage() {
   return (
     <main className="landing-shell">
@@ -78,16 +82,27 @@ export default function GetStartedPage() {
           </div>
 
           <div className="docs-preview">
-            <div className="docs-theme-space kt-theme-space">
-              <div className="docs-row">
-                <button className="kt-button kt-btn-md kt-btn-primary" type="button">
-                  Space theme button
-                </button>
+            <div className="docs-stack">
+              <div className="docs-theme-space kt-theme-space">
+                <div className="docs-row">
+                  <button className="kt-button kt-btn-md kt-btn-primary" type="button">
+                    Space theme button
+                  </button>
+                </div>
+              </div>
+
+              <div className="kt-theme-slate theme-preview-scope">
+                <div className="docs-row">
+                  <button className="kt-button kt-btn-md kt-btn-primary" type="button">
+                    Slate theme button
+                  </button>
+                </div>
               </div>
             </div>
           </div>
 
           <CodeBlock code={themeCode} />
+          <CodeBlock code={alternateThemeCode} />
         </section>
 
         <section className="docs-section">

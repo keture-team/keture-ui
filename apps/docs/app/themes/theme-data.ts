@@ -5,7 +5,7 @@ export type ThemeToken = {
 };
 
 export type ThemeDefinition = {
-  slug: "minimal" | "space";
+  slug: "minimal" | "slate" | "space";
   name: string;
   href: string;
   overviewDescription: string;
@@ -71,6 +71,56 @@ export const themes: ThemeDefinition[] = [
       { label: "Large", token: "--kt-shadow-lg", value: "0 24px 60px rgba(15, 23, 42, 0.14)" }
     ],
     surfaceColor: "#ffffff"
+  },
+  {
+    slug: "slate",
+    name: "Slate",
+    href: "/themes/slate",
+    overviewDescription: "Dark, muted, and flat with restrained GitHub-like contrast.",
+    previewDescription: "Muted surfaces, low radius, and flatter depth keep the system utilitarian and focused.",
+    detailDescription: [
+      "Slate is a dark utility-focused theme derived from the visual language in the imso-app reference project.",
+      "It uses GitHub-like muted surfaces, a cyan primary, low-radius edges, and flatter depth for internal tools and dashboards."
+    ],
+    wrapperClassName: "kt-theme-slate",
+    palette: [
+      { label: "Primary", token: "--kt-color-primary", value: "#0098c4" },
+      { label: "Background", token: "--kt-color-bg", value: "#1c2128" },
+      { label: "Surface", token: "--kt-color-surface", value: "#2d333b" },
+      { label: "Text", token: "--kt-color-text", value: "#f5f5f5" },
+      { label: "Accent", token: "--kt-color-accent", value: "#0098c4" }
+    ],
+    typography: {
+      family: '"Segoe UI", "Inter", sans-serif',
+      sizes: [
+        { label: "Small", token: "--kt-font-size-sm", value: "0.875rem" },
+        { label: "Medium", token: "--kt-font-size-md", value: "1rem" },
+        { label: "Large", token: "--kt-font-size-lg", value: "1.125rem" }
+      ]
+    },
+    spacing: [
+      { label: "1", token: "--kt-space-1", value: "0.25rem" },
+      { label: "2", token: "--kt-space-2", value: "0.5rem" },
+      { label: "3", token: "--kt-space-3", value: "0.75rem" },
+      { label: "4", token: "--kt-space-4", value: "1rem" },
+      { label: "5", token: "--kt-space-5", value: "1.5rem" },
+      { label: "6", token: "--kt-space-6", value: "2rem" },
+      { label: "7", token: "--kt-space-7", value: "3rem" },
+      { label: "8", token: "--kt-space-8", value: "4rem" }
+    ],
+    radius: [
+      { label: "Small", token: "--kt-radius-sm", value: "0.125rem" },
+      { label: "Medium", token: "--kt-radius-md", value: "0.25rem" },
+      { label: "Large", token: "--kt-radius-lg", value: "0.375rem" },
+      { label: "XL", token: "--kt-radius-xl", value: "0.5rem" }
+    ],
+    shadows: [
+      { label: "Small", token: "--kt-shadow-sm", value: "none" },
+      { label: "Medium", token: "--kt-shadow-md", value: "0 0 0 1px rgba(68, 76, 86, 0.24)" },
+      { label: "Large", token: "--kt-shadow-lg", value: "0 0 0 1px rgba(68, 76, 86, 0.3)" }
+    ],
+    glow: "rgba(0, 152, 196, 0.12)",
+    surfaceColor: "#2d333b"
   },
   {
     slug: "space",

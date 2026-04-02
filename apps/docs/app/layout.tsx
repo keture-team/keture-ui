@@ -1,4 +1,5 @@
 import "../../../packages/theme-minimal/theme.css";
+import "../../../packages/theme-slate/theme.css";
 import "../../../packages/theme-space/theme.css";
 import "../../../packages/core/dist/keture.css";
 import "./globals.css";

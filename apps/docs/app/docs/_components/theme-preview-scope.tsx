@@ -9,7 +9,6 @@ type ThemePreviewScopeProps = {
 export default function ThemePreviewScope({ children }: ThemePreviewScopeProps) {
   const [theme, setTheme] = useState("minimal");
   const selectId = useId();
-  const themeClassName = theme === "space" ? "kt-theme-space" : "";
 
   return (
     <div className="docs-stack">
@@ -24,11 +23,18 @@ export default function ThemePreviewScope({ children }: ThemePreviewScopeProps) 
           value={theme}
         >
           <option value="minimal">Minimal</option>
+          <option value="slate">Slate</option>
           <option value="space">Space</option>
         </select>
       </div>
 
-      <div className={`docs-theme-preview ${themeClassName}`.trim()}>{children}</div>
+      <div
+        className={`docs-theme-preview ${
+          theme === "space" ? "kt-theme-space" : theme === "slate" ? "kt-theme-slate" : ""
+        }`.trim()}
+      >
+        {children}
+      </div>
     </div>
   );
 }
