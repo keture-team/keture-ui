@@ -18,9 +18,9 @@ export default function DocsLayout({ children }: DocsLayoutProps) {
         </div>
 
         <nav aria-label="Components" className="docs-nav">
-          <Link href="/docs/components/button">Button</Link>
-          <Link href="/docs/components/card">Card</Link>
-          <Link href="/docs/components/input">Input</Link>
+          <Link href="/docs/button">Button</Link>
+          <Link href="/docs/card">Card</Link>
+          <Link href="/docs/input">Input</Link>
           <Link href="/docs/badge">Badge</Link>
           <Link href="/docs/drawer">Drawer</Link>
         </nav>

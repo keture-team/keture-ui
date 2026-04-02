@@ -9,7 +9,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Keture UI",
-  description: "A scalable UI system with multiple design themes."
+  description: "One system. Multiple design identities."
 };
 
 type RootLayoutProps = {
@@ -29,6 +29,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
             <nav aria-label="Primary" className="site-nav">
               <Link href="/">Home</Link>
               <Link href="/get-started">Get Started</Link>
+              <Link href="/themes">Themes</Link>
               <Link href="/docs">Docs</Link>
             </nav>
           </div>

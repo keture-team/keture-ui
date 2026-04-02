@@ -20,8 +20,6 @@ export default function ButtonPage() {
           <span>/</span>
           <Link href="/docs">Docs</Link>
           <span>/</span>
-          <Link href="/docs/components">Components</Link>
-          <span>/</span>
           <span>Button</span>
         </nav>
 

@@ -16,8 +16,6 @@ export default function CardPage() {
           <span>/</span>
           <Link href="/docs">Docs</Link>
           <span>/</span>
-          <Link href="/docs/components">Components</Link>
-          <span>/</span>
           <span>Card</span>
         </nav>
 

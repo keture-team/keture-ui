@@ -13,8 +13,6 @@ export default function InputPage() {
           <span>/</span>
           <Link href="/docs">Docs</Link>
           <span>/</span>
-          <Link href="/docs/components">Components</Link>
-          <span>/</span>
           <span>Input</span>
         </nav>
 

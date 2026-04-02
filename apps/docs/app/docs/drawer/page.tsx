@@ -86,13 +86,13 @@ export default function DrawerPage() {
             </div>
 
             <nav className="docs-nav">
-              <Link href="/docs/components/button" onClick={() => setIsOpen(false)}>
+              <Link href="/docs/button" onClick={() => setIsOpen(false)}>
                 Button
               </Link>
-              <Link href="/docs/components/card" onClick={() => setIsOpen(false)}>
+              <Link href="/docs/card" onClick={() => setIsOpen(false)}>
                 Card
               </Link>
-              <Link href="/docs/components/input" onClick={() => setIsOpen(false)}>
+              <Link href="/docs/input" onClick={() => setIsOpen(false)}>
                 Input
               </Link>
               <Link href="/docs/badge" onClick={() => setIsOpen(false)}>
