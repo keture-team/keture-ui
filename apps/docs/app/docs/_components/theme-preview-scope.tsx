@@ -22,6 +22,7 @@ export default function ThemePreviewScope({ children }: ThemePreviewScopeProps) 
           onChange={event => setTheme(event.target.value)}
           value={theme}
         >
+          <option value="keture">Keture</option>
           <option value="minimal">Minimal</option>
           <option value="slate">Slate</option>
           <option value="space">Space</option>
@@ -30,7 +31,13 @@ export default function ThemePreviewScope({ children }: ThemePreviewScopeProps) 
 
       <div
         className={`docs-theme-preview ${
-          theme === "space" ? "kt-theme-space" : theme === "slate" ? "kt-theme-slate" : ""
+          theme === "space"
+            ? "kt-theme-space"
+            : theme === "slate"
+              ? "kt-theme-slate"
+              : theme === "keture"
+                ? "kt-theme-keture"
+                : ""
         }`.trim()}
       >
         {children}

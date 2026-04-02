@@ -1,0 +1,9 @@
+{
+  "name": "@keture/theme-keture",
+  "version": "0.0.1",
+  "main": "theme.css",
+  "style": "theme.css",
+  "files": [
+    "theme.css"
+  ]
+}

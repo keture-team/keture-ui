@@ -5,7 +5,7 @@ export type ThemeToken = {
 };
 
 export type ThemeDefinition = {
-  slug: "minimal" | "slate" | "space";
+  slug: "keture" | "minimal" | "slate" | "space";
   name: string;
   href: string;
   overviewDescription: string;
@@ -25,6 +25,56 @@ export type ThemeDefinition = {
 };
 
 export const themes: ThemeDefinition[] = [
+  {
+    slug: "keture",
+    name: "Keture",
+    href: "/themes/keture",
+    overviewDescription: "Bold, dark, and warm with Keture brand-led energy.",
+    previewDescription: "Black surfaces, warm gradients, and red-orange accents give the system a strong branded identity.",
+    detailDescription: [
+      "Keture is the brand theme derived from the visual language in the keture-site reference project.",
+      "It uses Manrope, dark surfaces, and a warm gold-to-red accent family to bring the site identity into the UI component system."
+    ],
+    wrapperClassName: "kt-theme-keture",
+    palette: [
+      { label: "Primary", token: "--kt-color-primary", value: "#ff401b" },
+      { label: "Background", token: "--kt-color-bg", value: "#000000" },
+      { label: "Surface", token: "--kt-color-surface", value: "#120807" },
+      { label: "Text", token: "--kt-color-text", value: "#fff4ec" },
+      { label: "Accent", token: "--kt-color-accent", value: "#ffb000" }
+    ],
+    typography: {
+      family: '"Manrope", "Inter", "Segoe UI", sans-serif',
+      sizes: [
+        { label: "Small", token: "--kt-font-size-sm", value: "0.875rem" },
+        { label: "Medium", token: "--kt-font-size-md", value: "1rem" },
+        { label: "Large", token: "--kt-font-size-lg", value: "1.125rem" }
+      ]
+    },
+    spacing: [
+      { label: "1", token: "--kt-space-1", value: "0.25rem" },
+      { label: "2", token: "--kt-space-2", value: "0.5rem" },
+      { label: "3", token: "--kt-space-3", value: "0.75rem" },
+      { label: "4", token: "--kt-space-4", value: "1rem" },
+      { label: "5", token: "--kt-space-5", value: "1.5rem" },
+      { label: "6", token: "--kt-space-6", value: "2rem" },
+      { label: "7", token: "--kt-space-7", value: "3rem" },
+      { label: "8", token: "--kt-space-8", value: "4rem" }
+    ],
+    radius: [
+      { label: "Small", token: "--kt-radius-sm", value: "0.5rem" },
+      { label: "Medium", token: "--kt-radius-md", value: "0.75rem" },
+      { label: "Large", token: "--kt-radius-lg", value: "1rem" },
+      { label: "XL", token: "--kt-radius-xl", value: "1.5rem" }
+    ],
+    shadows: [
+      { label: "Small", token: "--kt-shadow-sm", value: "0 10px 24px rgba(0, 0, 0, 0.26)" },
+      { label: "Medium", token: "--kt-shadow-md", value: "0 18px 44px rgba(255, 64, 27, 0.12)" },
+      { label: "Large", token: "--kt-shadow-lg", value: "0 30px 72px rgba(255, 30, 38, 0.16)" }
+    ],
+    glow: "rgba(255, 144, 0, 0.18)",
+    surfaceColor: "#120807"
+  },
   {
     slug: "minimal",
     name: "Minimal",
