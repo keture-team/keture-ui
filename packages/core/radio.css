@@ -1,0 +1,34 @@
+.kt-radio {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--kt-space-2);
+  color: var(--kt-color-text);
+  cursor: pointer;
+}
+
+.kt-radio__input {
+  width: 1rem;
+  height: 1rem;
+  margin: 0;
+  flex-shrink: 0;
+  accent-color: var(--kt-color-primary);
+}
+
+.kt-radio__input:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 var(--kt-focus-ring-width) var(--kt-color-focus-ring);
+}
+
+.kt-radio__label {
+  color: inherit;
+}
+
+.kt-radio__input:disabled,
+.kt-radio[aria-disabled="true"] {
+  cursor: not-allowed;
+}
+
+.kt-radio__input:disabled + .kt-radio__label,
+.kt-radio[aria-disabled="true"] .kt-radio__label {
+  color: var(--kt-color-text-muted);
+}

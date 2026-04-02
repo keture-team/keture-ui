@@ -17,9 +17,39 @@ const componentLinks = [
     description: "Text field styles with shared focus and spacing tokens."
   },
   {
+    href: "/docs/select",
+    title: "Select",
+    description: "Native select styling with token-based field states."
+  },
+  {
+    href: "/docs/textarea",
+    title: "Textarea",
+    description: "Multi-line text fields with the same core input surface."
+  },
+  {
+    href: "/docs/checkbox",
+    title: "Checkbox",
+    description: "Basic choice inputs for multi-select forms."
+  },
+  {
+    href: "/docs/radio",
+    title: "Radio",
+    description: "Single-select input groups with the same theme tokens."
+  },
+  {
+    href: "/docs/switch",
+    title: "Switch",
+    description: "Compact on/off toggles for settings and preferences."
+  },
+  {
     href: "/docs/badge",
     title: "Badge",
     description: "Compact semantic labels for status and small metadata."
+  },
+  {
+    href: "/docs/alert",
+    title: "Alert",
+    description: "Inline feedback blocks for status, guidance, and errors."
   },
   {
     href: "/docs/drawer",

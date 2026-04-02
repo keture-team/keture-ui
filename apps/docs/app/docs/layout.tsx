@@ -21,7 +21,13 @@ export default function DocsLayout({ children }: DocsLayoutProps) {
           <Link href="/docs/button">Button</Link>
           <Link href="/docs/card">Card</Link>
           <Link href="/docs/input">Input</Link>
+          <Link href="/docs/select">Select</Link>
+          <Link href="/docs/textarea">Textarea</Link>
+          <Link href="/docs/checkbox">Checkbox</Link>
+          <Link href="/docs/radio">Radio</Link>
+          <Link href="/docs/switch">Switch</Link>
           <Link href="/docs/badge">Badge</Link>
+          <Link href="/docs/alert">Alert</Link>
           <Link href="/docs/drawer">Drawer</Link>
         </nav>
       </aside>

@@ -1,0 +1,36 @@
+.kt-alert {
+  --kt-alert-accent: var(--kt-color-primary);
+
+  display: grid;
+  gap: var(--kt-space-2);
+  padding: var(--kt-space-3) var(--kt-space-4);
+  border: 1px solid var(--kt-color-border);
+  border-left: 4px solid var(--kt-alert-accent);
+  border-radius: var(--kt-radius-md);
+  background-color: var(--kt-color-surface-muted);
+  color: var(--kt-color-text);
+}
+
+.kt-alert > :where(h1, h2, h3, h4, h5, h6, p) {
+  margin: 0;
+}
+
+.kt-alert-title {
+  font-weight: var(--kt-font-weight-medium);
+}
+
+.kt-alert-primary {
+  --kt-alert-accent: var(--kt-color-primary);
+}
+
+.kt-alert-secondary {
+  --kt-alert-accent: var(--kt-color-secondary);
+}
+
+.kt-alert-success {
+  --kt-alert-accent: var(--kt-color-success);
+}
+
+.kt-alert-danger {
+  --kt-alert-accent: var(--kt-color-danger);
+}

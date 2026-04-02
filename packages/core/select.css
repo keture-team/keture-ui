@@ -1,0 +1,42 @@
+.kt-select {
+  width: 100%;
+  min-height: var(--kt-control-height-md);
+  padding: 0 calc(var(--kt-space-5) + var(--kt-space-2)) 0 var(--kt-space-3);
+  border: 1px solid var(--kt-color-border);
+  border-radius: var(--kt-radius-md);
+  background-color: var(--kt-color-surface);
+  background-image:
+    linear-gradient(45deg, transparent 50%, currentColor 50%),
+    linear-gradient(135deg, currentColor 50%, transparent 50%);
+  background-position:
+    calc(100% - var(--kt-space-4)) calc(50% - 1px),
+    calc(100% - var(--kt-space-3)) calc(50% - 1px);
+  background-repeat: no-repeat;
+  background-size: 0.375rem 0.375rem;
+  color: var(--kt-color-text);
+  appearance: none;
+  transition:
+    border-color 160ms ease,
+    box-shadow 160ms ease,
+    background-color 160ms ease;
+}
+
+.kt-select:hover {
+  border-color: var(--kt-color-border-strong);
+}
+
+.kt-select:focus {
+  outline: none;
+}
+
+.kt-select:focus-visible {
+  border-color: var(--kt-color-primary);
+  box-shadow: 0 0 0 var(--kt-focus-ring-width) var(--kt-color-focus-ring);
+}
+
+.kt-select:disabled,
+.kt-select[aria-disabled="true"] {
+  cursor: not-allowed;
+  background-color: var(--kt-color-surface-muted);
+  color: var(--kt-color-text-muted);
+}

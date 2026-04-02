@@ -95,8 +95,26 @@ export default function DrawerPage() {
               <Link href="/docs/input" onClick={() => setIsOpen(false)}>
                 Input
               </Link>
+              <Link href="/docs/select" onClick={() => setIsOpen(false)}>
+                Select
+              </Link>
+              <Link href="/docs/textarea" onClick={() => setIsOpen(false)}>
+                Textarea
+              </Link>
+              <Link href="/docs/checkbox" onClick={() => setIsOpen(false)}>
+                Checkbox
+              </Link>
+              <Link href="/docs/radio" onClick={() => setIsOpen(false)}>
+                Radio
+              </Link>
+              <Link href="/docs/switch" onClick={() => setIsOpen(false)}>
+                Switch
+              </Link>
               <Link href="/docs/badge" onClick={() => setIsOpen(false)}>
                 Badge
+              </Link>
+              <Link href="/docs/alert" onClick={() => setIsOpen(false)}>
+                Alert
               </Link>
             </nav>
           </div>

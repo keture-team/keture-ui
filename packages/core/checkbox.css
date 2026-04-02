@@ -1,0 +1,34 @@
+.kt-checkbox {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--kt-space-2);
+  color: var(--kt-color-text);
+  cursor: pointer;
+}
+
+.kt-checkbox__input {
+  width: 1rem;
+  height: 1rem;
+  margin: 0;
+  flex-shrink: 0;
+  accent-color: var(--kt-color-primary);
+}
+
+.kt-checkbox__input:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 var(--kt-focus-ring-width) var(--kt-color-focus-ring);
+}
+
+.kt-checkbox__label {
+  color: inherit;
+}
+
+.kt-checkbox__input:disabled,
+.kt-checkbox[aria-disabled="true"] {
+  cursor: not-allowed;
+}
+
+.kt-checkbox__input:disabled + .kt-checkbox__label,
+.kt-checkbox[aria-disabled="true"] .kt-checkbox__label {
+  color: var(--kt-color-text-muted);
+}

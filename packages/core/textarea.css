@@ -1,0 +1,39 @@
+.kt-textarea {
+  width: 100%;
+  min-height: 6rem;
+  padding: var(--kt-space-3);
+  border: 1px solid var(--kt-color-border);
+  border-radius: var(--kt-radius-md);
+  background-color: var(--kt-color-surface);
+  color: var(--kt-color-text);
+  line-height: var(--kt-line-height-base);
+  resize: vertical;
+  transition:
+    border-color 160ms ease,
+    box-shadow 160ms ease,
+    background-color 160ms ease;
+}
+
+.kt-textarea::placeholder {
+  color: var(--kt-color-text-muted);
+}
+
+.kt-textarea:hover {
+  border-color: var(--kt-color-border-strong);
+}
+
+.kt-textarea:focus {
+  outline: none;
+}
+
+.kt-textarea:focus-visible {
+  border-color: var(--kt-color-primary);
+  box-shadow: 0 0 0 var(--kt-focus-ring-width) var(--kt-color-focus-ring);
+}
+
+.kt-textarea:disabled,
+.kt-textarea[aria-disabled="true"] {
+  cursor: not-allowed;
+  background-color: var(--kt-color-surface-muted);
+  color: var(--kt-color-text-muted);
+}
