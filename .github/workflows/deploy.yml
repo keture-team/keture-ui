@@ -28,7 +28,7 @@ jobs:
       - name: Inject GitHub Pages Config
         working-directory: ./apps/docs
         run: |
-          sed -i "s/const nextConfig: NextConfig = {/const nextConfig: NextConfig = { output: 'export', basePath: '\/${{ github.event.repository.name }}', images: { unoptimized: true }, /" nextConfig.ts
+          sed -i "s/const nextConfig: NextConfig = {/const nextConfig: NextConfig = { output: 'export', basePath: '\/keture-ui', images: { unoptimized: true }, /" next.config.ts
 
       - name: Build Docs
         run: npm run build --workspace=@keture-ui/docs
